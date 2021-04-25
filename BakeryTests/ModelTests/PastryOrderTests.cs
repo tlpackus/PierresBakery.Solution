@@ -6,11 +6,11 @@ namespace Bakery.Tests
   [TestClass]
   public class PastryOrderTests
   {
-    // [TestMethod]
-    // public void PastryOrderConstructor_CreatesInstanceOfPastryOrder_PastryOrder()
-    // {
-    //   PastryOrder newPastryOrder = new PastryOrder();
-    //   Assert.AreEqual(typeof(PastryOrder), newPastryOrder.GetType());
-    // }
+    [TestMethod]
+    public void PastryOrderConstructor_CreatesInstanceOfPastryOrder_PastryOrder()
+    {
+      PastryOrder newPastryOrder = new PastryOrder();
+      Assert.AreEqual(typeof(PastryOrder), newPastryOrder.GetType());
+    }
   }
 } 
