@@ -21,5 +21,14 @@ namespace Bakery.Tests
       int result = newBreadOrder.OrderedBread;
       Assert.AreEqual(orderedBread, result);
     }
+
+    [TestMethod]
+    public void BreadOrderPrice_ReturnsBreadTotalPriceBuyingOneLoaf_int()
+    {
+      int orderedBread = 1;
+      BreadOrder newBreadOrder = new BreadOrder(orderedBread);
+      int result = newBreadOrder.BreadOrderPrice();
+      Assert.AreEqual(5, result);
+    }
   }
 } 
