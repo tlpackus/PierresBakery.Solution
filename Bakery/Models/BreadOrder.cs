@@ -11,8 +11,8 @@ namespace Bakery.Models
     {
       if (OrderedBread % 3 == 0)
       {
-        int totalPrice = (OrderedBread - (OrderedBread / 3)) * 5;
-        return totalPrice;
+        int breadPrice = (OrderedBread - (OrderedBread / 3)) * 5;
+        return breadPrice;
       }
       else
       {
