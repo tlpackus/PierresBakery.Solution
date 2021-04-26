@@ -9,7 +9,7 @@ namespace Bakery.Models
     }
     public int BreadOrderPrice()
     {
-      return 0;// return OrderedBread * 5;
+      return OrderedBread * 5;
     }
   }
 } 
