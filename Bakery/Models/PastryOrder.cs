@@ -11,7 +11,15 @@ namespace Bakery.Models
 
     public int PastryOrderPrice()
     {
-      return OrderedPastry * 2;
+      if (OrderedPastry % 3 == 0)
+      {
+        int pastryPrice = ((OrderedPastry * 2) - (OrderedPastry / 3));
+        return pastryPrice;
+      }
+      else
+      {
+        return OrderedPastry * 2;
+      }
     }
-  }
-} 
+  } 
+}
