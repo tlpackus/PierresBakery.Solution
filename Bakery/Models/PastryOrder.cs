@@ -6,7 +6,7 @@ namespace Bakery.Models
 
     public PastryOrder(int pastryOrder)
     {
-
+      OrderedPastry = pastryOrder;
     }
   }
 } 
