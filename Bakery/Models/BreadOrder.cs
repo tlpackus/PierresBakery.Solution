@@ -9,7 +9,15 @@ namespace Bakery.Models
     }
     public int BreadOrderPrice()
     {
-      return OrderedBread * 5;
+      if (OrderedBread % 3 == 0)
+      {
+        int totalPrice = (OrderedBread - (OrderedBread / 3)) * 5;
+        return totalPrice;
+      }
+      else
+      {
+        return OrderedBread * 5;
+      }
     }
   }
 } 
