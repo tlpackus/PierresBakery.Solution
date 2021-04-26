@@ -13,6 +13,7 @@
 
 ## Description
 
+This is a console application made to calculate the total cost of a bakery order. The fictional bakery has two deals going on. A buy two get one free on bread and buy three get a dollar off on pastries. The user should be able to enter in their order amounts and get the correct total displayed back in the console. 
 
 ## Setup/Installation Requirements
 
