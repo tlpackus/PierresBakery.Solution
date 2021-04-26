@@ -26,7 +26,15 @@ namespace Bakery.Tests
       int orderedPastry = 1;
       PastryOrder newPastryOrder = new PastryOrder(orderedPastry);
       int result = newPastryOrder.PastryOrderPrice();
-      Assert.AreEqual(2,result);
+      Assert.AreEqual(2, result);
+    }
+    [TestMethod]
+    public void PastryOrderPrice_ReturnsPastryTotalPriceIfBuying3WithDeal()
+    {
+      int orderedPastry = 3;
+      PastryOrder newPastryOrder = new PastryOrder(orderedPastry);
+      int result = newPastryOrder.PastryOrderPrice();
+      Assert.AreEqual(5, result);
     }
   } 
 }
