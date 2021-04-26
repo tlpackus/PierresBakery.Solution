@@ -7,5 +7,9 @@ namespace Bakery.Models
     {
       OrderedBread = breadOrder;
     }
+    public int BreadOrderPrice()
+    {
+      return 0;// return OrderedBread * 5;
+    }
   }
 } 
