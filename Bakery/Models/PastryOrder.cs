@@ -8,5 +8,10 @@ namespace Bakery.Models
     {
       OrderedPastry = pastryOrder;
     }
+
+    public int PastryOrderPrice()
+    {
+      return 0;
+    }
   }
 } 
