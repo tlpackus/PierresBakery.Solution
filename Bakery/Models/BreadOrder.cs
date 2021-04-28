@@ -9,9 +9,9 @@ namespace Bakery.Models
     }
     public int BreadOrderPrice()
     {
-      if (OrderedBread % 3 == 0)
+      if (OrderedBread > 2)
       {
-        int breadPrice = (OrderedBread - (OrderedBread / 3)) * 5;
+        int breadPrice = ((OrderedBread * 5) - (OrderedBread / 3) * 5);
         return breadPrice;
       }
       else
