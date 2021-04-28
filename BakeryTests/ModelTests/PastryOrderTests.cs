@@ -29,12 +29,20 @@ namespace Bakery.Tests
       Assert.AreEqual(2, result);
     }
     [TestMethod]
-    public void PastryOrderPrice_ReturnsPastryTotalPriceIfBuying3WithDeal()
+    public void PastryOrderPrice_ReturnsPastryTotalPriceIfBuying3WithDeal_int()
     {
       int orderedPastry = 3;
       PastryOrder newPastryOrder = new PastryOrder(orderedPastry);
       int result = newPastryOrder.PastryOrderPrice();
       Assert.AreEqual(5, result);
+    }
+    [TestMethod]
+    public void PastryOrderPrice_ReturnsBreadTotalPriceIfBuyingOver3WithDeal_int()
+    {
+      int orderedPastry = 205;
+      PastryOrder newPastryOrder = new PastryOrder(orderedPastry);
+      int result = newPastryOrder.PastryOrderPrice();
+      Assert.AreEqual(342, result);
     }
   } 
 }
