@@ -24,9 +24,9 @@ namespace Bakery.Models
       PastryOrder newPastryOrder = new PastryOrder(orderedPastry);
       Console.WriteLine("-------------------------------------------");
 
-      Console.WriteLine($"You ordered {orderedBread} loaves of bread. Totaling ${newBreadOrder.BreadOrderPrice()}. ");
+      Console.WriteLine($"You ordered {orderedBread} loaves of bread. Totaling ${newBreadOrder.BreadOrderPrice()} (with deal if applicable). ");
 
-      Console.WriteLine($"You ordered {orderedPastry} pastries. Totaling ${newPastryOrder.PastryOrderPrice()}. ");
+      Console.WriteLine($"You ordered {orderedPastry} pastries. Totaling ${newPastryOrder.PastryOrderPrice()} (with deal if applicable). ");
 
       Console.WriteLine($"GRAND TOTAL WITH SPECIAL OFFER APPLIED: ${newBreadOrder.BreadOrderPrice() + newPastryOrder.PastryOrderPrice()}");
     }
